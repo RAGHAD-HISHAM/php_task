@@ -1,0 +1,7 @@
+Task 18
+•	Objective: Enforce specific rules for column values.
+•	Exercise: Write SQL queries to add a CHECK constraint to the employees table to ensure the salary is greater than 0.
+
+ALTER TABLE employees
+ADD CONSTRAINT check_salary
+CHECK (salary > 0);

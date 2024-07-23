@@ -1,0 +1,7 @@
+•  Task 3
+•	Objective: Filter results using the WHERE clause.
+•	Exercise: Write a query to select employees with a salary greater than 50,000.
+
+SELECT *
+FROM employees
+WHERE salary > 50000;

@@ -1,0 +1,6 @@
+•  Task 16
+•	Objective: Ensure certain columns cannot have NULL values.
+•	Exercise: Write SQL queries to modify the employees table to ensure the name column cannot be NULL
+
+ALTER TABLE employees
+MODIFY name VARCHAR(100) NOT NULL;

@@ -1,0 +1,17 @@
+ Task 11
+•	Objective: Differentiate between WHERE and HAVING.
+•	Exercises:
+o	Use WHERE to filter employees with a salary greater than 50,000.
+o	Use HAVING to filter departments with an average salary greater than 50,000 after grouping.
+
+-- Using WHERE
+
+SELECT *
+FROM employees
+WHERE salary > 50000;
+
+-- Using HAVING
+SELECT *
+FROM employees
+WHERE salary > 50000;
+

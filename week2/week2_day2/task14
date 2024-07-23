@@ -1,0 +1,25 @@
+•  Task 14
+•	Objective: Understand and create many-to-many relationships.
+•	Exercise: Write SQL queries to create tables students, courses, and student_courses to represent students enrolled in multiple courses and courses having multiple students
+
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (student_id)
+);
+
+
+CREATE TABLE courses (
+    course_id INT AUTO_INCREMENT,
+    course_name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (course_id)
+);
+
+
+CREATE TABLE student_courses (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES students(student_id) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(course_id) ON DELETE CASCADE
+);

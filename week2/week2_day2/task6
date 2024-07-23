@@ -1,0 +1,9 @@
+Task 6
+•	Objective: Sort query results.
+•	Exercise: Write a query to select all employees and order them by their hire date in descending order.
+
+
+
+SELECT *
+FROM employees
+ORDER BY hire_date DESC;

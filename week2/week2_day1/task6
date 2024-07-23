@@ -1,0 +1,26 @@
+Task 6: Primary Keys
+1.	Explanation: Write a short explanation of what a primary key is and why it is important.
+
+A primary key is a unique identifier for a record in a database table. It is a column (or a set of columns) that uniquely identifies each row in the table. The primary key ensures that each record can be uniquely identified, which is crucial for maintaining data integrity and enabling efficient data retrieval.
+
+Importance of Primary Keys:
+
+    Uniqueness:
+1-Ensures that each record in the table is unique.
+2-Prevents duplicate records, maintaining data integrity.
+
+    Indexing:
+1-Automatically creates a unique index on the primary key column(s).
+2-Enhances the speed of queries and data retrieval operations.
+
+    Referential Integrity:
+1-Used in defining relationships between tables.
+2-Ensures that foreign keys in related tables correctly reference existing records in the primary key table.
+
+    Entity Integrity:
+1-Guarantees that the primary key column cannot contain NULL values.
+2-Ensures that every record has a valid, unique identifier.
+
+    Efficient Data Management:
+1-Facilitates operations like updates, deletions, and searching by providing a unique reference to each record.
+2-Simplifies complex queries and joins between tables.

@@ -1,0 +1,7 @@
+•  Task 5
+•	Objective: Use the IN operator to filter data.
+•	Exercise: Write a query to select employees who belong to departments 1, 2, or 3.
+
+SELECT *
+FROM employees
+WHERE department_id IN (1, 2, 3);

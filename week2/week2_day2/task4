@@ -1,0 +1,7 @@
+Task 4
+•	Objective: Use the LIKE operator for pattern matching.
+•	Exercise: Write a query to select employees whose names start with 'J'
+
+SELECT *
+FROM employees
+WHERE name LIKE 'J%';

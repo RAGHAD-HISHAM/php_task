@@ -1,0 +1,28 @@
+<<<<<<<<<<<  Understanding Databases  >>>>>>>>>>>
+
+1.	Research and Write: Write a short essay on what a database is. Explain the concept in your own words.
+
+A database is a way to store and organize data so it can be easily accessed, managed, and updated.
+
+Instead of having lots of paper files, you have digital tables that hold data in rows (records) and columns (fields). Each table stores information about a specific topic, like books in a library .
+
+
+2.	SQL Basics: Write a brief explanation of what SQL is and its importance in managing databases.
+
+
+SQL, or Structured Query Language, is a programming language used to interact with databases. It's how you ask a database to show you information, add new data, update existing data, or delete data you don't need. 
+
+SQL commands:
+
+<!--SELECT: Retrieves data from the database.-->
+SELECT title, author FROM Books;
+
+<!--INSERT: Adds new data to the database.-->
+INSERT INTO Books (title, author) VALUES ('the alchemist', 'Paulo Coelho');
+
+<!-- UPDATE: Changes existing data in the database.-->
+UPDATE Books SET author = 'Paulo Coelho' WHERE title = 'the alchemist';
+
+<!--DELETE: Removes data from the database.-->
+DELETE FROM Books WHERE title = 'the alchemist';
+

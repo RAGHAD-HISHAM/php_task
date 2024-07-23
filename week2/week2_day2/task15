@@ -1,0 +1,10 @@
+Task 15
+•	Objective: Implement foreign keys to enforce referential integrity.
+•	Exercise: Write SQL queries to add a foreign key to the employees table referencing the departments table.
+
+ALTER TABLE employees
+ADD CONSTRAINT fk_department
+FOREIGN KEY (department_id) REFERENCES departments(department_id)
+ON DELETE SET NULL
+ON UPDATE CASCADE;
+

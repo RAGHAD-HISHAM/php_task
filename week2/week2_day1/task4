@@ -1,0 +1,48 @@
+Task 4: String Data Types
+
+
+1.	Research and List: List and describe the different string data types in MySQL. Provide examples for each.
+
+1- CHAR
+Description: A fixed-length string. If the string is shorter than the specified length, it is padded with spaces.
+Usage: Best for storing fixed-length strings, such as codes or abbreviations.
+
+2- VARCHAR
+Description: A variable-length string. It stores only the characters you input without padding.
+Usage: Suitable for strings of variable length, such as names or titles.
+
+3- TINYTEXT
+Description: A very small text string.
+Maximum Length: 255 characters.
+Usage: Best for short text data.
+
+4- TEXT
+Description: A small text string.
+Maximum Length: 65,535 characters.
+Usage: Suitable for longer text data, such as descriptions or comments.
+
+5- MEDIUMTEXT
+Description: A medium-length text string.
+Maximum Length: 16,777,215 characters.
+Usage: Used for even larger text data, such as articles or documents.
+
+6- LONGTEXT
+Description: A large text string.
+Maximum Length: 4,294,967,295 characters.
+Usage: Suitable for very large text data, such as books or extensive logs.
+
+7- BINARY
+Description: A fixed-length binary string. Similar to CHAR, but stores binary data.
+Usage: Best for fixed-length binary data.
+
+8- VARBINARY
+Description: A variable-length binary string. Similar to VARCHAR, but stores binary data.
+Usage: Suitable for variable-length binary data.
+
+9-  ENUM
+Description: A string object that can have only one value, chosen from a list of predefined values.
+Usage: Suitable for categorical data.
+
+10- SET
+Description: A string object that can have zero or more values, chosen from a list of predefined values.
+Usage: Suitable for storing multiple options or flags.

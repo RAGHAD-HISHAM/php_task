@@ -1,0 +1,6 @@
+-- •  Task 2
+-- Objective: Retrieve specific columns.
+-- Exercise: Write a query to select the name and salary columns from the employees table.
+
+SELECT name, salary
+FROM employees;

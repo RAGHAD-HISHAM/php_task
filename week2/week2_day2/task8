@@ -1,0 +1,6 @@
+Task 8
+•	Objective: Calculate the sum of a column.
+•	Exercise: Write a query to calculate the total salary of all employees
+
+SELECT SUM(salary) AS total_salary
+FROM employees;

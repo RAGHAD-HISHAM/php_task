@@ -1,0 +1,26 @@
+Task 5: Date and Time Data Types
+1-Research and List: List and describe the date and time data types in MySQL. Provide examples for each.
+
+1. DATE
+Description:
+The DATE type is used for values with a date part but no time part. The format is YYYY-MM-DD.
+
+2. TIME
+Description:
+The TIME type is used for values with a time part but no date part. The format is HH:MM:SS.
+
+3. DATETIME
+Description:
+The DATETIME type is used for values that contain both date and time parts. The format is YYYY-MM-DD HH:MM:SS.
+
+4. TIMESTAMP
+Description:
+The TIMESTAMP type is similar to DATETIME, but it also includes the time zone. It is often used for recording the exact time of events, such as when a record was inserted or updated. The format is YYYY-MM-DD HH:MM:SS. It also automatically converts the time to UTC for storage and back to the server's time zone for retrieval.
+
+5. YEAR
+Description:
+The YEAR type is used for values that represent a year. It can be in 2-digit or 4-digit format. The supported range is 1901 to 2155 for 4-digit format and 70 to 69 for 2-digit format, which maps to 1970 to 2069.
+
+Default Values: Many of these types can have default values such as CURRENT_TIMESTAMP for TIMESTAMP and DATETIME.
+
+Automatic Initialization and Update: The TIMESTAMP type can automatically be initialized to the current date and time or updated to the current date and time when the row is modified.

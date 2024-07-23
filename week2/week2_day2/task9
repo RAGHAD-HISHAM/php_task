@@ -1,0 +1,6 @@
+Task 9
+•	Objective: Calculate the average of a column.
+•	Exercise: Write a query to find the average salary of employees.
+
+SELECT AVG(salary) AS average_salary
+FROM employees;

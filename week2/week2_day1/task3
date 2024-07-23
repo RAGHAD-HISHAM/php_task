@@ -1,0 +1,68 @@
+<<<<<<<<<<<  Numeric Data Types  >>>>>>>>>>>
+
+
+1.	Research and List: List and describe the different numeric data types available in MySQL. Provide examples for each.
+
+    1-Integer Types
+
+
+1-1 . TINYINT
+
+Description: A very small integer.
+Range:
+Signed: -128 to 127
+Unsigned: 0 to 255
+
+1-2 . SMALLINT
+
+Description: A small integer.
+Range:
+Signed: -32,768 to 32,767
+Unsigned: 0 to 65,535
+
+1-3 . MEDIUMINT
+
+Description: A medium-sized integer.
+Range:
+Signed: -8,388,608 to 8,388,607
+Unsigned: 0 to 16,777,215
+
+1-4 . INT (or INTEGER)
+
+Description: A standard integer.
+Range:
+Signed: -2,147,483,648 to 2,147,483,647
+Unsigned: 0 to 4,294,967,295
+
+1-5 . BIGINT
+
+Description: A large integer.
+Range:
+Signed: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+Unsigned: 0 to 18,446,744,073,709,551,615
+
+/////////////////////////////////////////////////////////////////////////////
+
+    2-Fixed-Point Types
+
+2-1 . DECIMAL (or NUMERIC)
+Description: A fixed-point number.
+Range: Defined by the user with precision and scale.
+
+/////////////////////////////////////////////////////////////////////////////
+
+    3-Floating-Point Types
+
+3-1 . FLOAT
+Description: A small floating-point number.
+Range: Approximate, based on precision.
+
+3-2 . DOUBLE (or DOUBLE PRECISION)
+Description: A double-precision floating-point number.
+Range: Approximate, based on precision.
+
+3-3 . REAL
+Description: A synonym for DOUBLE.
+Range: Same as DOUBLE.
+
+

@@ -1,0 +1,15 @@
+Task 8: Auto-Increment
+1.	Explanation: Explain what AUTO_INCREMENT is and provide an example of how to use it.
+
+The AUTO_INCREMENT attribute is used in MySQL to generate a unique, automatically incrementing integer value for a column. This is particularly useful for creating primary keys where each new record needs a unique identifier.
+
+Key Features:
+
+1-Automatic Value Generation:
+    Each time a new row is inserted, MySQL automatically generates a unique integer value for the column with the AUTO_INCREMENT attribute.
+
+2-Starting Value and Increment:
+    By default, the starting value is 1, and it increments by 1 for each new row. This can be customized.
+    
+Use Cases:
+    Commonly used for primary key columns to ensure each row has a unique identifier.

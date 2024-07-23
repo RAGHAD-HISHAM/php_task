@@ -1,0 +1,12 @@
+Task 7: Null and Not Null Constraints
+1.	Explanation: Describe the difference between NULL and NOT NULL constraints with examples.
+
+NULL Constraint
+        A column defined with the NULL constraint can store NULL values, representing missing or unknown data. This is the default behavior if no constraint is specified.
+    Use Case:
+      Useful when a value for a column might not always be known or applicable.
+
+NOT NULL Constraint:
+        A column defined with the NOT NULL constraint must contain a value; it cannot be NULL. This ensures that a column always has valid data.
+    Use Case:
+        Useful for columns where data is mandatory, such as primary keys, foreign keys, and essential attributes.

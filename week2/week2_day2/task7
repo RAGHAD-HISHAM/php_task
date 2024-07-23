@@ -1,0 +1,6 @@
+Task 7
+•	Objective: Count the number of rows.
+•	Exercise: Write a query to count the number of employees.
+
+SELECT COUNT(*) AS total_employees
+FROM employees;

@@ -1,0 +1,7 @@
+•  Task 17
+•	Objective: Ensure all values in a column are unique.
+•	Exercise: Write SQL queries to modify the employees table to ensure the email column has unique values.
+
+ALTER TABLE employees
+ADD CONSTRAINT unique_email
+UNIQUE (email);

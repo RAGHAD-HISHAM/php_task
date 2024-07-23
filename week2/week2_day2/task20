@@ -1,0 +1,93 @@
+<!-- Task 20
+•	Objective: Apply all learned concepts in a complete database system.
+•	Task: Write SQL queries to design and create a database for a company with the following requirements:
+o	Tables: departments, employees, projects, employee_projects.
+o	Relationships: One-to-many between departments and employees, many-to-many between employees and projects.
+o	Constraints: Appropriate use of NOT NULL, UNIQUE, CHECK, DEFAULT, and foreign keys.
+o	Queries: Write queries to demonstrate use of SELECT, WHERE, LIKE, IN, ORDER BY, aggregation functions, WHERE vs. HAVING. -->
+
+
+
+CREATE TABLE departments (
+    department_id INT AUTO_INCREMENT,
+    department_name VARCHAR(100) NOT NULL UNIQUE,
+    PRIMARY KEY (department_id)
+);
+
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    hire_date DATE NOT NULL,
+    salary DECIMAL(10, 2) CHECK (salary > 0),
+    department_id INT,
+    status VARCHAR(20) DEFAULT 'Active',
+    PRIMARY KEY (emp_id),
+    FOREIGN KEY (department_id) REFERENCES departments(department_id) ON DELETE SET NULL
+);
+
+
+CREATE TABLE projects (
+    project_id INT AUTO_INCREMENT,
+    project_name VARCHAR(100) NOT NULL UNIQUE,
+    start_date DATE NOT NULL,
+    end_date DATE,
+    PRIMARY KEY (project_id)
+);
+
+
+CREATE TABLE employee_projects (
+    emp_id INT,
+    project_id INT,
+    PRIMARY KEY (emp_id, project_id),
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id) ON DELETE CASCADE,
+    FOREIGN KEY (project_id) REFERENCES projects(project_id) ON DELETE CASCADE
+);
+
+
+Sample Queries
+
+<!-- 1. SELECT All Employees -->
+SELECT * FROM employees;
+
+<!-- 2. Filter Employees with Salary Greater Than 50,000 -->
+SELECT * FROM employees
+WHERE salary > 50000;
+
+<!-- 3. Find Employees Whose Names Start with 'J' -->
+SELECT * FROM employees
+WHERE name LIKE 'J%';
+
+<!-- 4. Select Employees Belonging to Departments 1, 2, or 3 -->
+SELECT * FROM employees
+WHERE department_id IN (1, 2, 3);
+
+<!-- 5. Order Employees by Hire Date in Descending Order -->
+SELECT * FROM employees
+ORDER BY hire_date DESC;
+
+<!-- 6. Count the Number of Employees -->
+SELECT COUNT(*) AS total_employees
+FROM employees;
+
+<!-- 7. Calculate the Total Salary of All Employees -->
+SELECT SUM(salary) AS total_salary
+FROM employees;
+
+<!-- 8. Find the Average Salary of Employees -->
+SELECT AVG(salary) AS average_salary
+FROM employees;
+
+<!-- 9. Find the Minimum and Maximum Salary -->
+-- Minimum Salary
+SELECT MIN(salary) AS min_salary
+FROM employees;
+
+-- Maximum Salary
+SELECT MAX(salary) AS max_salary
+FROM employees;
+
+<!-- 10. Find Departments with an Average Salary Greater Than 50,000 -->
+SELECT department_id, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department_id
+HAVING AVG(salary) > 50000;

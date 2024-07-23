@@ -1,0 +1,5 @@
+-- •  Task 1
+-- Objective: Retrieve data from a table.
+-- Exercise: Write a query to select all columns from a table named employees.
+
+SELECT * FROM employees;

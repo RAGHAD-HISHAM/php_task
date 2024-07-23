@@ -1,0 +1,19 @@
+Task 12
+•	Objective: Understand and create one-to-one relationships.
+•	Exercise: Write SQL queries to create tables employees and employee_details with a one-to-one relationship using a foreign key.
+
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    hire_date DATE,
+    PRIMARY KEY (emp_id)
+);
+
+
+CREATE TABLE employee_details (
+    detail_id INT,
+    address VARCHAR(255),
+    phone_number VARCHAR(15),
+    PRIMARY KEY (detail_id),
+    FOREIGN KEY (detail_id) REFERENCES employees(emp_id) ON DELETE CASCADE
+);

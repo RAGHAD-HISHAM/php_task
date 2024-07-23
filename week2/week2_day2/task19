@@ -1,0 +1,10 @@
+Task 19
+•	Objective: Set default values for columns.
+•	Exercise: Write SQL queries to modify the employees table to set a default value of 'Active' for the status column
+
+ALTER TABLE employees
+ADD COLUMN status VARCHAR(20) DEFAULT 'Active';
+
+-- if the column already exists 
+ALTER TABLE employees
+ALTER COLUMN status SET DEFAULT 'Active';

@@ -1,0 +1,27 @@
+<<<<<<<<<<<  Types of Databases  >>>>>>>>>>>
+
+
+1.	Comparison Chart: Create a comparison chart between Relational and Non-relational databases. Include at least three differences and three examples of each.
+
+
+
+Feature	        |   Relational Databases	    |  Non-Relational Databases
+                |                               |                              
+Data Structure  |    Tables with rows           |    Varied structures e.g. 
+                |       and columns             | documents, key-value pairs, graphs
+                |                               |
+Schema          |   Fixed schema (data must     |   Flexible schema (data can
+                | follow predefined structure)  |  be stored in any format)
+                |                               |
+Data            | Use primary and foreign keys  |  Use different methods (embedding,
+Relationships   |  to establish relationships   | linking) to relate data
+                |                               |
+Examples	    |   MySQL, PostgreSQL,          |  	MongoDB, Redis, 
+                |        Oracle                 |      Cassandra
+
+
+
+
+ 2.	Research: Write a summary on what MySQL is, including its features and typical use cases.
+
+ MySQL is an open-source relational database management system (RDBMS) that uses SQL  to manage and manipulate databases. 
