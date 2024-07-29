@@ -75,7 +75,7 @@ else
     echo "<hr>";
 
 // • Add a new person to the array and print the updated array.
-array_push($names, "(newperson=>30)" );
+array_push($names, 30 );
 print_r($names);
 
 
@@ -155,11 +155,81 @@ echo "<hr>";
 ////////////////////////////////////////////////////////
 
 
-echo"<h1>task3</h1>
+echo"<h1>task4</h1>
 <br><br>" ;
 
+// • Use array_push() to add an element to an indexed array.
+array_push($fruits, "strawberry");
+print_r($fruits);
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use array_pop() to remove the last element of an indexed array.
+array_pop($students);
+print_r($students);
 
 
+echo "<br><br>";
+echo "<hr>";
+
+// • Use array_keys() to get all the keys of an associative array.
+$names_keys = array_keys($names);
+print_r($names_keys);
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use array_values() to get all the values of an associative array.
+$names_value = array_values($names);
+print_r($names_value);
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use count() to get the number of elements in an array.
+echo (count($students));
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use array_merge() to combine two arrays.
+print_r(array_merge($fruits, $names));
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use array_search() to find a specific value in an array.
+print_r(array_search(19,$names));
+
+echo "<br><br>";
+echo "<hr>";
+
+// • Use sort() to sort an indexed array.
+$num = array(1,6,4,3,7,9);
+sort($num);
+foreach($num as $number){
+print_r("$number\n");
+};
+
+echo "<br><br>";
+echo "<hr>";
+
+//• Use ksort() to sort an associative array by keys.
+ksort($names);
+print_r($names);
+
+echo "<br><br>";
+echo "<hr>";
+
+
+// • Use asort() to sort an associative array by values. 
+asort($names);
+print_r($names);
+  
+
+echo "<br><br>";
+echo "<hr>";
 
 
 echo "</pre>";

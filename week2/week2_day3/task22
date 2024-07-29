@@ -1,0 +1,2 @@
+22.	Cross Join:
+Perform a cross join on employees, departments, and projects to get a Cartesian product of the three tables.

@@ -1,0 +1,8 @@
+17.	Inner Join:
+Join employees, departments, and projects to find the project names for employees in each department.
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name, p.project_name
+FROM employees AS e
+JOIN departments AS d ON e.department_id = d.department_id
+JOIN employee_projects AS ep ON e.employee_id = ep.emp_id
+JOIN projects AS p ON ep.project_id = p.project_id;

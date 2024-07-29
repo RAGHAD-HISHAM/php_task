@@ -1,0 +1,7 @@
+3.	Right Join:
+Join departments and employees to find all departments and the employees in each department, including departments with no employees.
+
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name
+FROM employees e
+Right JOIN departments d ON e.department_id = d.department_id;

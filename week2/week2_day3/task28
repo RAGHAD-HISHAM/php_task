@@ -1,0 +1,2 @@
+28.	Join with Group By:
+Join orders, customers, and order_items to find the total quantity of items ordered by each customer.

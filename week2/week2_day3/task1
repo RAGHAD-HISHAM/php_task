@@ -1,0 +1,12 @@
+1.	Inner Join:
+Join employees and departments to find the department name of each employee.
+
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name
+FROM employees e
+INNER JOIN departments d ON e.department_id = d.department_id;
+
+-- Explanation:
+-- SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name: Selects the employee ID, first name, last name, and the department name.
+-- FROM employees: Specifies the employees table as the primary table.
+-- INNER JOIN departments ON employees.department_id = departments.department_id: Joins the employees table with the departments table based on the department_id field.

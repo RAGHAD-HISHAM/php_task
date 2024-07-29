@@ -1,0 +1,8 @@
+5.	Self Join:
+Join employees with itself to find the manager of each employee.
+
+SELECT e1.employee_id, e1.first_name as employee_name, 
+        e2.manager_id , e2.first_name as manager_name
+        
+FROM employees e1
+LEFT JOIN employee e2 ON e1.employee_id  = e2.manager_id 

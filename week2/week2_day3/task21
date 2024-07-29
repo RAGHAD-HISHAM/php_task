@@ -1,0 +1,2 @@
+21.	Self Join:
+Join employees with itself and departments to find employees and their managers within the same department.

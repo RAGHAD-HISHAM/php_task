@@ -1,0 +1,8 @@
+18.	Left Join:
+Join employees, projects, and clients to list all employees and their projects, including projects without clients.
+
+SELECT e.employee_id, e.first_name, e.last_name, p.project_name, c.client_name
+FROM employees AS e
+LEFT JOIN employee_projects AS ep ON e.employee_id = ep.emp_id
+LEFT JOIN projects AS p ON ep.project_id = p.project_id
+LEFT JOIN clients AS c ON p.client_id = c.client_id;

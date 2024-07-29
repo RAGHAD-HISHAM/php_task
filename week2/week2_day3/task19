@@ -1,0 +1,7 @@
+19.	Right Join:
+Join departments, employees, and salaries to list all departments, their employees, and their salaries, including departments with no employees
+
+SELECT d.department_id, d.department_name, e.first_name, e.last_name, s.amount AS salary
+FROM departments AS d
+RIGHT JOIN employees AS e ON d.department_id = e.department_id
+RIGHT JOIN salaries AS s ON e.employee_id = s.employee_id;

@@ -1,0 +1,13 @@
+15.	Join with CASE Statement:
+Join employees and departments and use a CASE statement to classify employees based on department.
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name,
+       CASE
+           WHEN d.department_name = 'HR' THEN 'Human Resources'
+           WHEN d.department_name = 'Engineering' THEN 'Technical Team'
+           WHEN d.department_name = 'Sales' THEN 'Sales Team'
+           WHEN d.department_name = 'Marketing' THEN 'Marketing Team'
+           ELSE 'Other'
+       END AS department_classification
+FROM employees AS e
+JOIN departments AS d ON e.department_id = d.department_id;

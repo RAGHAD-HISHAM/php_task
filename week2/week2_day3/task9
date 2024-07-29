@@ -1,0 +1,8 @@
+9.	Join with Conditional Filtering:
+Join employees and projects to find employees working on projects started after a specific date.
+
+SELECT e.employee_id, e.first_name, e.last_name, p.project_id, p.project_name, p.start_date
+FROM employees AS e
+JOIN employee_projects AS ep ON e.employee_id = ep.emp_id
+JOIN projects AS p ON ep.project_id = p.project_id
+WHERE p.start_date > '2023-03-01';

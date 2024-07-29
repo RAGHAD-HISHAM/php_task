@@ -1,0 +1,8 @@
+2.	Left Join:
+Join employees and projects to find all employees and the projects they are working on, if any.
+
+
+SELECT e.employee_id, e.first_name, e.last_name, p.project_name
+FROM employees e
+LEFT JOIN employee_projects ep ON e.employee_id = ep.emp_id
+LEFT JOIN projects p ON ep.project_id = p.project_id;

@@ -1,0 +1,6 @@
+7.	Join with Alias:
+Join employees and departments using aliases to simplify query readability.
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_id, d.department_name
+FROM employees AS e
+JOIN departments AS d ON e.department_id = d.department_id;

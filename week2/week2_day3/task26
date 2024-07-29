@@ -1,0 +1,2 @@
+26.	Join with WHERE Clause:
+Join orders, customers, and products to find orders for a specific product by customer.

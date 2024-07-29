@@ -1,0 +1,6 @@
+12.	Join with USING Clause:
+Join employees and departments using the department ID.
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name
+FROM employees AS e
+JOIN departments AS d USING (department_id);

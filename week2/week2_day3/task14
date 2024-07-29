@@ -1,0 +1,8 @@
+14.	Join with HAVING Clause:
+Join orders and customers to find customers who have placed more than 5 orders.
+
+SELECT c.customer_id, c.customer_name, COUNT(o.order_id) AS total_orders
+FROM orders AS o
+JOIN customers AS c ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.customer_name
+HAVING COUNT(o.order_id) > 5;

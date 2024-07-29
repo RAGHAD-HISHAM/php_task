@@ -1,0 +1,2 @@
+27.	Join with ON Clause:
+Join employees, departments, and locations on appropriate keys to find the office location of each employee.

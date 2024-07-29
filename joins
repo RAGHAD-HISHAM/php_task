@@ -1,0 +1,34 @@
+
+-- Inner Join
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees 
+INNER JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
+
+
+-- Full Join
+-- SELECT e.FirstName, e.LastName, d.DepartmentName
+-- FROM Employees e
+-- FULL OUTER JOIN Departments d ON e.DepartmentID = d.DepartmentID;
+
+-- Left Join
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees
+LEFT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
+
+
+-- Right Join
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees
+RIGHT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
+
+
+-- Cross Join
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+FROM Employees
+CROSS JOIN Departments;
+
+
+-- Self Join
+SELECT e1.FirstName AS EmployeeFirstName, e2.FirstName AS ManagerFirstName
+FROM Employees e1
+INNER JOIN Employees e2 ON e1.ManagerID = e2.EmployeeID;

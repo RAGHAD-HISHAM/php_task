@@ -1,0 +1,8 @@
+13.	Join with Group By:
+Join orders and customers to find the total number of orders placed by each customer
+
+
+SELECT c.customer_id, c.customer_name, COUNT(o.order_id) AS total_orders
+FROM orders AS o
+JOIN customers AS c ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.customer_name;

@@ -1,0 +1,6 @@
+6.	Cross Join:
+Perform a cross join on employees and departments to get a Cartesian product of the two tables.
+
+SELECT e.first_name, department_name
+from employees e
+Cross join departments

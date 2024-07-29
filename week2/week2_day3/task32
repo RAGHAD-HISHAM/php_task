@@ -1,0 +1,2 @@
+32.	Join with ORDER BY:
+Join employees, departments, and projects and order the result by department name, project name, and employee name.

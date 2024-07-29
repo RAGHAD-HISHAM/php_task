@@ -1,0 +1,7 @@
+16.	Join with ORDER BY:
+Join employees and departments and order the result by department name and employee name.
+
+SELECT e.employee_id, e.first_name, e.last_name, d.department_name
+FROM employees AS e
+JOIN departments AS d ON e.department_id = d.department_id
+ORDER BY d.department_name, e.last_name, e.first_name; 
